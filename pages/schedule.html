@@ -1,12 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="../global/main.css" />
-</head>
-<body>
-     <div class="container "></div>  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little Leaf</title>
+    <link rel="stylesheet" href="../global/main.css" />
+    <link rel="stylesheet" href="../css/schedule.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="container fill-container scroll-page">
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <a href="../index.html" class="logo">
+          <img class="img" src="../images/logo.svg" alt="logo image" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./services.html">Products</a></li>
+          <li><a href="./about.html">About </a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="icons-container">
+          <a href="./pages/profile.html">
+            <img
+              class="search-icon icon"
+              src="../images/search.svg"
+              alt="search icon"
+          /></a>
+          <a href="../pages/cart.html">
+            <img
+              class="cart-icon icon"
+              src="../images/shopping-cart.svg"
+              alt="shopping cart icon"
+            />
+          </a>
+          <a href="../pages/profile.html">
+            <img
+              class="user-icon icon"
+              src="../images/user.svg"
+              alt="user icon"
+            />
+          </a>
+          <a href="../pages/schedule.html">
+            <img
+              class="sprout-icon-icon icon"
+              src="../images/sprout.svg"
+              alt="sprout icon"
+            />
+          </a>
+        </div>
+      </nav>
+
+      <div class="page-header">
+        <h2>Nurturing Rhythms</h2>
+        <p>
+          Every living thing thrives on a natural rhythm. Just as the earth
+          relies on the quiet arrival of rain, your botanical companions
+          flourish with consistent, mindful care. This watering schedule is your
+          guide to nourishment—helping you learn the unique needs of every leaf,
+          stem, and root so your personal sanctuary can truly bloom.
+        </p>
+      </div>
+
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Task</th>
+            <th>Plant</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Sunday</td>
+            <td>Watering</td>
+            <td>Monstera</td>
+            <td>8:00 AM</td>
+          </tr>
+
+          <tr>
+            <td>Monday</td>
+            <td>Sunlight Rotation</td>
+            <td>All Plants</td>
+            <td>10:00 AM</td>
+          </tr>
+
+          <tr>
+            <td>Wednesday</td>
+            <td>Fertilizing</td>
+            <td>Indoor Plants</td>
+            <td>5:00 PM</td>
+          </tr>
+
+          <tr>
+            <td>Friday</td>
+            <td>Leaf Cleaning</td>
+            <td>Fiddle Leaf Fig</td>
+            <td>6:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
 </html>

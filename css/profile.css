@@ -1,0 +1,237 @@
+/* ================================== Profile Page Layout ==================================*/
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* --- Sticky Sidebar --- */
+.sticky-sidebar {
+  position: sticky;
+  top: 140px; /* Adjust this if your navbar is taller or shorter */
+  height: fit-content;
+}
+
+/* --- Profile Sections Spacing --- */
+.profile-section {
+  margin-bottom: 5rem; /* Large gaps between sections to make scrolling obvious */
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(91, 107, 64, 0.1);
+  margin-left: 30%;
+  height:fit-content;
+}
+.profile-section h3{
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.profile-section:last-child {
+  border-bottom: none;
+}
+
+/* --- Profile Sidebar Navigation --- */
+.profile-sidebar {
+  flex: 1; /* Takes up 1 part of the available space */
+  min-width: 250px;
+  position: fixed;
+  top: 30%;
+}
+
+.sidebar-links {
+  list-style: none;
+  background-color: var(--secondary-color);
+  padding: 1.5rem 0;
+  border-radius: 8px;
+}
+
+.sidebar-links li a {
+  display: block;
+  padding: 0.8rem 2rem;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent; /* Hidden border for active state */
+}
+
+.sidebar-links li a:hover {
+  background-color: rgba(91, 107, 64, 0.05);
+  color: var(--primary-color);
+}
+
+.sidebar-links li a.active {
+  color: var(--primary-color);
+  font-weight: 700;
+  background-color: var(--secondaryWhite-color);
+  border-left: 3px solid var(--primary-color); /* Highlights the current page */
+}
+
+.sidebar-links .divider {
+  height: 1px;
+  background-color: rgba(91, 107, 64, 0.1);
+  margin: 1rem 0;
+}
+
+.sidebar-links .sign-out {
+  color: #da2020;
+  font-weight: 500;
+}
+
+/* --- Profile Content Area--- */
+/* ---  Forms --- */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+/* --- Order Cards --- */
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.order-card {
+  background-color: var(--secondaryWhite-color);
+  border: 1px solid rgba(91, 107, 64, 0.2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+  box-shadow: 0 10px 20px rgba(91, 107, 64, 0.05);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.order-id {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--secondaryBlue-color);
+  font-size: 1.1rem;
+}
+
+.order-status {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.order-status.delivered {
+  background-color: rgba(91, 107, 64, 0.1);
+  color: var(--primary-color);
+}
+
+.order-status.processing {
+  background-color: rgba(214, 158, 46, 0.1);
+  color: #d69e2e; /* A warm yellow/gold */
+}
+
+.order-date,
+.order-items {
+  color: var(--color-text);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.order-total {
+  font-weight: 700;
+  color: var(--secondaryBlue-color);
+  margin-top: 1rem;
+}
+
+/* --- Grids for Addresses & Payments --- */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.info-card {
+  background-color: var(--secondaryWhite-color);
+  border: 1px solid rgba(91, 107, 64, 0.2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.info-card h4 {
+  font-family: var(--font-heading);
+  color: var(--secondaryBlue-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.info-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--secondaryBrown-color);
+  margin-bottom: 0.2rem;
+}
+
+.badge {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: rgba(91, 107, 64, 0.1);
+  color: var(--primary-color);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.card-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.text-btn {
+  background: none;
+  border: none;
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 0;
+}
+
+.text-btn.danger {
+  color: #a05252;
+}
+
+/* The "Add New" Placeholder Card */
+.add-new-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px dashed rgba(91, 107, 64, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 180px;
+}
+
+.add-new-card:hover {
+  background-color: rgba(91, 107, 64, 0.05);
+  border-color: var(--primary-color);
+}
+
+.add-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
