@@ -21,7 +21,7 @@
         </a>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-           <li><a href="./pages/services.html">Services</a></li>
+          <li><a href="./pages/services.html">Services</a></li>
           <li><a href="./pages/products.html">Products</a></li>
           <li><a href="./pages/about.html">About </a></li>
           <li><a href="./pages/contact.html">Contact</a></li>
@@ -40,7 +40,7 @@
               alt="shopping cart icon"
             />
           </a>
-          <a href="./pages/profile.html">
+          <a id="userIcon" class="userIcon" href="./pages/profile.html">
             <img
               class="user-icon icon"
               src="./images/user.svg"
@@ -69,11 +69,12 @@
         <div class="btn-container">
           <button
             class="main-btn"
-            onclick="window.location.href = './pages/services.html'"
+            onclick="window.location.href = './pages/products.html'"
           >
             Cultivate Your Space
           </button>
           <button
+            id="loginBtn"
             class="main-btn login-btn"
             onclick="window.location.href = './pages/login.html'"
           >

@@ -17,7 +17,7 @@
 }
 
 .product-image-bg {
-  background-color: rgba(97, 124, 94, 0.4);
+  background-color: var(--secondaryGreen-color);
   border-radius: 12px;
   padding: 0.5rem;
   aspect-ratio: 1 / 1; /* Keeps the background a perfect square */

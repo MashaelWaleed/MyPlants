@@ -45,18 +45,18 @@
 }
 
 .login-btn {
- color: rgba(86, 104, 54, 0.9);
- background-color: var(--secondaryWhite-color);
- padding-right: 15px;
- padding-left: 15px;
- outline-color: rgba(86, 104, 54, 0.5);
- outline-width: 1px;
- outline-style: solid;
+  color: rgba(86, 104, 54, 0.9);
+  background-color: var(--secondaryWhite-color);
+  padding-right: 15px;
+  padding-left: 15px;
+  outline-color: rgba(86, 104, 54, 0.5);
+  outline-width: 1px;
+  outline-style: solid;
 }
 
 .login-btn:hover {
- color: var(--secondaryBrown-color);
- background-color: #f3f2f0
+  color: var(--secondaryBrown-color);
+  background-color: #f3f2f0;
 }
 
 .main-img {
@@ -85,7 +85,7 @@
   display: flex;
   justify-content: center;
   transition: transform 0.3s ease;
- border: 3px solid rgba(86, 104, 54, 0.5);
+  border: 3px solid var(--secondaryGreen-color);
 }
 
 .card:hover {
@@ -94,6 +94,6 @@
 
 .card .img {
   position: absolute;
-  top: -40px;
+  top: -30px;
   width: 75%;
 }

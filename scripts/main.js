@@ -33,3 +33,29 @@ searchInput.addEventListener("keypress", (e) => {
   }
 });
 
+//check user icon
+
+document.addEventListener("DOMContentLoaded", () => {
+  const userIcon = document.getElementById("userIcon");
+  const loginBtn = document.getElementById("loginBtn");
+
+  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+
+  // 🎯 1. Control login button visibility
+  if (loginBtn) {
+    loginBtn.style.display = isLoggedIn ? "none" : "inline-block";
+  }
+
+  // 🎯 2. Control user icon visibility safely
+  if (userIcon) {
+    if (isLoggedIn) {
+      userIcon.style.display = "flex";
+      // navigate to profile
+      userIcon.addEventListener("click", () => {
+        window.location.href = "./pages/profile.html";
+      });
+    } else {
+      userIcon.style.display = "hide";
+    }
+  }
+});

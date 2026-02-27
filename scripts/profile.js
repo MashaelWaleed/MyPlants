@@ -32,3 +32,34 @@ const observer = new IntersectionObserver(
 sections.forEach((section) => {
   observer.observe(section);
 });
+
+//protect profile page
+document.addEventListener("DOMContentLoaded", () => {
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+  if (isLoggedIn !== "true") {
+    // redirect back if not logged in
+    window.location.href = "login.html";
+  }
+});
+
+//log out 
+document.addEventListener("DOMContentLoaded", () => {
+  const signOutBtn = document.querySelector(".sign-out");
+
+  if (!signOutBtn) return;
+
+  signOutBtn.addEventListener("click", (e) => {
+    e.preventDefault(); // stop # from jumping page
+
+    // 🧹 clear login data
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("userEmail");
+
+    // optional: clear everything
+    // localStorage.clear();
+
+    // 🔁 redirect to login page
+    window.location.href = "../index.html";
+  });
+});

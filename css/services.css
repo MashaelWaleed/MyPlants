@@ -13,7 +13,7 @@
   text-align: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
   transition: 0.3s ease;
-  border: 3px solid rgba(86, 104, 54, 0.5);
+  border: 3px solid rgb(218, 211, 172);
   max-width: 550px;
   margin: 0 5%;
 }

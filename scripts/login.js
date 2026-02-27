@@ -19,3 +19,21 @@ document.addEventListener("DOMContentLoaded", () => {
     loginForm.classList.add("active-form");
   });
 });
+
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  // simulate login validation
+  if (email && password) {
+    localStorage.setItem("isLoggedIn", "true");
+    localStorage.setItem("userEmail", email);
+
+    // redirect to profile
+    window.location.href = "../index.html";
+  }
+});
+
+console.log("kkkkkkkkkkkkk");
