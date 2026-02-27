@@ -13,7 +13,7 @@
 html,
 body {
   margin: 0;
-  background-color: var(--primary-color);
+  background-color:var(--primary-color);
   color: var(--secondaryBlue-color);
   display: flex;
   justify-content: center; /* horizontal */
@@ -94,6 +94,8 @@ button:hover,
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .main-container {
@@ -270,4 +272,61 @@ button:hover,
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+/* footerr */
+.footer {
+  /* Positioning */
+  position: absolute;
+  bottom: 0%;
+  left: 10px;
+  right: 10px;
+  z-index: 10;
+
+  /* Dimensions & Background */
+  width: 90%; /* Removed 'width: inherit' override */
+
+  /* Flexbox Setup */
+  display: flex; /* Removed duplicate */
+  justify-content: space-between;
+  align-items: center;
+  gap: 15%;
+
+  /* Spacing */
+  height: fit-content;
+  padding: 0 10px; /* Use vertical padding to control height naturally instead of forcing 60px */
+
+  /* Typography */
+  color: var(--secondaryBlue-color);
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+}
+
+.info {
+  text-align: center;
+  width: fit-content;
+  margin-left: 5%;
+}
+
+.info-contact {
+  display: flex;
+  gap: 15%;
+  text-align: center;
+   margin-right: 4%;
+}
+
+.info-contact p {
+  min-width: fit-content;
+  padding: 0;
+  margin: 0;
+}
+
+.footer a {
+  color: var(--secondaryBlue-color);
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: var(--primary-color);
 }

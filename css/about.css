@@ -5,6 +5,7 @@
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+  margin-bottom: 3rem;
 }
 
 .moving-card {
@@ -43,4 +44,60 @@
 .moving-card:hover {
   transform: translateY(-15px); /* Floats the card up */
   box-shadow: 0 15px 30px rgba(91, 107, 64, 0.15); /* Adds a soft green-tinted shadow */
+}
+
+/* VID Section styling */
+.vid-section {
+  padding: 10% 20px;
+  text-align: center;
+}
+
+/* Container to limit width */
+.vid-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Heading */
+.vid-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: var(--secondaryBlue-color);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive video wrapper */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Make iframe/video fill wrapper */
+.video-wrapper iframe,
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
 }
