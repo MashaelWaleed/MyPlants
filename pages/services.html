@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Products | Little Leaf</title>
+    <title>Little Leaf</title>
     <link rel="stylesheet" href="../global/main.css" />
-    <link rel="stylesheet" href="../css/products.css" />
+    <link rel="stylesheet" href="../css/services.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <main class="container fill-container scroll-page">
       <!-- NAVBAR -->
@@ -22,12 +23,13 @@
         </a>
         <ul class="nav-links">
           <li><a href="../index.html">Home</a></li>
-          <li><a href="./services.html">Products</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./products.html">Products</a></li>
           <li><a href="./about.html">About </a></li>
-          <li><a href="./about.html">Contact</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
         <div class="icons-container">
-          <a href="../pages/profile.html">
+          <a href="#" id="openSearch">
             <img
               class="search-icon icon"
               src="../images/search.svg"
@@ -47,7 +49,7 @@
               alt="user icon"
             />
           </a>
-           <a href="../pages/schedule.html">
+          <a href="../pages/schedule.html">
             <img
               class="sprout-icon-icon icon"
               src="../images/sprout.svg"
@@ -56,221 +58,88 @@
           </a>
         </div>
       </nav>
-
+     
+      <!-- HEADER -->
       <div class="page-header">
-        <h2>Our Collection</h2>
-        <p>Bring the outside in with our hand-selected botanical companions.</p>
+        <h2>Our Services</h2>
+        <p>Everything you need to grow your perfect green space 🌿</p>
       </div>
 
-      <div class="product-grid">
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1646667687331-e06974a7fda2?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Snake Plant"
-            />
-            <button class="add-to-cart-btn">+</button>
-          </div>
-          <div class="product-info">
-            <h3>Zanzibar Gem</h3>
-            <p class="price">$35.00</p>
-          </div>
+      <!-- SERVICES GRID -->
+      <section class="services-grid">
+        <!-- 1. SHOP -->
+        <div class="service-card">
+          <h3>🌱 Shop Plants</h3>
+          <p>Browse our beautiful collection of indoor plants.</p>
+          <a href="./products.html" class="service-btn button">Shop Now</a>
         </div>
 
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1646667687331-e06974a7fda2?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Snake Plant"
-            />
-            <button class="add-to-cart-btn">+</button>
-          </div>
-          <div class="product-info">
-            <h3>Zanzibar Gem</h3>
-            <p class="price">$35.00</p>
-          </div>
+        <!-- 2. SEARCH -->
+        <div class="service-card">
+          <h3>🔍 Find Your Plant</h3>
+          <p>Search for the perfect plant by name or type.</p>
+          <button id="openSearchFromService" class="service-btn button">
+            Start Searching
+          </button>
         </div>
 
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Monstera Deliciosa"
-            />
-            <button class="add-to-cart-btn">+</button>
-          </div>
-          <div class="product-info">
-            <h3>Monstera Deliciosa</h3>
-            <p class="price">$45.00</p>
-          </div>
+        <!-- 3. GIFT -->
+        <div class="service-card">
+          <h3>🎁 Send a Gift</h3>
+          <p>Send a plant as a beautiful gift to someone special.</p>
+          <a href="./contact.html" class="service-btn button">Send Gift</a>
         </div>
 
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1646667687331-e06974a7fda2?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Snake Plant"
-            />
-            <button class="add-to-cart-btn">+</button>
-          </div>
-          <div class="product-info">
-            <h3>Zanzibar Gem</h3>
-            <p class="price">$35.00</p>
-          </div>
+        <!-- 4. CARE -->
+        <div class="service-card">
+          <h3>💡 Plant Care Tips</h3>
+          <p>Learn how to take care of your plants easily.</p>
+          <a href="#careSection" class="service-btn button">Learn More</a>
         </div>
+      </section>
 
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1611080352932-349f99ce3c93?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Rubber Plant"
-            />
-            <button class="add-to-cart-btn">+</button>
-          </div>
-          <div class="product-info">
-            <h3>Rubber Tree</h3>
-            <p class="price">$40.00</p>
-          </div>
-        </div>
+      <!-- CARE TIPS SECTION -->
+      <section id="careSection" class="care-section page-header">
+        <h2>Plant Care Basics 🌿</h2>
 
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1646667687331-e06974a7fda2?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Snake Plant"
-            />
-            <button class="add-to-cart-btn">+</button>
+        <div class="care-grid">
+          <div>
+            <h3>☀️ Sunlight</h3>
+            <p>Place plants near natural light but avoid strong direct sun.</p>
           </div>
-          <div class="product-info">
-            <h3>Zanzibar Gem</h3>
-            <p class="price">$35.00</p>
-          </div>
-        </div>
 
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1646667687331-e06974a7fda2?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Snake Plant"
-            />
-            <button class="add-to-cart-btn">+</button>
+          <div>
+            <h3>💧 Water</h3>
+            <p>Water when the soil feels dry. Do not overwater.</p>
           </div>
-          <div class="product-info">
-            <h3>Zanzibar Gem</h3>
-            <p class="price">$35.00</p>
-          </div>
-        </div>
 
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1646667687331-e06974a7fda2?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Snake Plant"
-            />
-            <button class="add-to-cart-btn">+</button>
+          <div>
+            <h3>🌡 Temperature</h3>
+            <p>Keep plants in a moderate room temperature environment.</p>
           </div>
-          <div class="product-info">
-            <h3>Zanzibar Gem</h3>
-            <p class="price">$35.00</p>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1646667687331-e06974a7fda2?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Snake Plant"
-            />
-            <button class="add-to-cart-btn">+</button>
-          </div>
-          <div class="product-info">
-            <h3>Zanzibar Gem</h3>
-            <p class="price">$35.00</p>
-          </div>
-        </div>
 
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1646667687331-e06974a7fda2?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Snake Plant"
-            />
-            <button class="add-to-cart-btn">+</button>
-          </div>
-          <div class="product-info">
-            <h3>Zanzibar Gem</h3>
-            <p class="price">$35.00</p>
+          <div>
+            <h3>🌬 Air</h3>
+            <p>Good airflow helps prevent plant diseases.</p>
           </div>
         </div>
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1646667687331-e06974a7fda2?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Snake Plant"
-            />
-            <button class="add-to-cart-btn">+</button>
-          </div>
-          <div class="product-info">
-            <h3>Zanzibar Gem</h3>
-            <p class="price">$35.00</p>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1646667687331-e06974a7fda2?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Snake Plant"
-            />
-            <button class="add-to-cart-btn">+</button>
-          </div>
-          <div class="product-info">
-            <h3>Zanzibar Gem</h3>
-            <p class="price">$35.00</p>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1646667687331-e06974a7fda2?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Snake Plant"
-            />
-            <button class="add-to-cart-btn">+</button>
-          </div>
-          <div class="product-info">
-            <h3>Zanzibar Gem</h3>
-            <p class="price">$35.00</p>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1597055905081-8fb243054170?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Fiddle Leaf Fig"
-            />
-            <button class="add-to-cart-btn">+</button>
-          </div>
-          <div class="product-info">
-            <h3>Fiddle Leaf Fig</h3>
-            <p class="price">$65.00</p>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image-bg">
-            <img
-              src="https://images.unsplash.com/photo-1646667687331-e06974a7fda2?auto=format&fit=crop&q=80&w=300&h=300"
-              alt="Snake Plant"
-            />
-            <button class="add-to-cart-btn">+</button>
-          </div>
-          <div class="product-info">
-            <h3>Zanzibar Gem</h3>
-            <p class="price">$35.00</p>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
+
+    <!-- 🔍 Floating Search Overlay -->
+    <div id="searchOverlay" class="search-overlay">
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for plants..."
+        />
+        <button id="searchBtn">Search</button>
+      </div>
+    </div>
+      <button id="backToTopBtn" class="back-to-top"> <img class="img" src="../images/chevron-up.svg" alt="up button" /></button>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/services.js"></script>
   </body>
 </html>

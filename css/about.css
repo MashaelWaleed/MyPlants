@@ -19,7 +19,6 @@
     transform 0.4s ease,
     box-shadow 0.4s ease;
   border: 3px solid rgba(86, 104, 54, 0.5);
-  
 }
 
 .card-icon {
@@ -45,6 +44,3 @@
   transform: translateY(-15px); /* Floats the card up */
   box-shadow: 0 15px 30px rgba(91, 107, 64, 0.15); /* Adds a soft green-tinted shadow */
 }
-
-
-

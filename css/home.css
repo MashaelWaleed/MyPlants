@@ -45,11 +45,11 @@
 }
 
 .login-btn {
- color: var(--secondaryBrown-color);
+ color: rgba(86, 104, 54, 0.9);
  background-color: var(--secondaryWhite-color);
  padding-right: 15px;
  padding-left: 15px;
- outline-color: var(--primary-color);
+ outline-color: rgba(86, 104, 54, 0.5);
  outline-width: 1px;
  outline-style: solid;
 }
@@ -85,8 +85,7 @@
   display: flex;
   justify-content: center;
   transition: transform 0.3s ease;
-  border-style: solid;
-  border-color: var(--secondaryGreen-color);
+ border: 3px solid rgba(86, 104, 54, 0.5);
 }
 
 .card:hover {

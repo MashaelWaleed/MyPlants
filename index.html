@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Little Leaf</title>
     <link rel="stylesheet" href="global/main.css" />
-       <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,12 +21,13 @@
         </a>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="./pages/services.html">Products</a></li>
+           <li><a href="./pages/services.html">Services</a></li>
+          <li><a href="./pages/products.html">Products</a></li>
           <li><a href="./pages/about.html">About </a></li>
           <li><a href="./pages/contact.html">Contact</a></li>
         </ul>
         <div class="icons-container">
-          <a href="./pages/profile.html">
+          <a href="#" id="openSearch">
             <img
               class="search-icon icon"
               src="./images/search.svg"
@@ -46,7 +47,7 @@
               alt="user icon"
             />
           </a>
-           <a href="./pages/schedule.html">
+          <a href="./pages/schedule.html">
             <img
               class="sprout-icon-icon icon"
               src="./images/sprout.svg"
@@ -66,10 +67,19 @@
           vibrant, living companions.
         </h3>
         <div class="btn-container">
-           <button class="main-btn">Cultivate Your Space</button>
-        <button class="main-btn login-btn">Login</button>
+          <button
+            class="main-btn"
+            onclick="window.location.href = './pages/services.html'"
+          >
+            Cultivate Your Space
+          </button>
+          <button
+            class="main-btn login-btn"
+            onclick="window.location.href = './pages/login.html'"
+          >
+            Login
+          </button>
         </div>
-       
       </div>
 
       <img
@@ -91,5 +101,20 @@
         </div>
       </div>
     </main>
+
+    <!-- 🔍 Floating Search Overlay -->
+    <div id="searchOverlay" class="search-overlay">
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for plants..."
+        />
+        <button id="searchBtn">Search</button>
+      </div>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/products.js"></script>
   </body>
 </html>
