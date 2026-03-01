@@ -59,3 +59,42 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
+// --- Hamburger Menu Toggle ---
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+if (hamburger) {
+  hamburger.addEventListener("click", () => {
+    // Toggles the "X" animation on the icon
+    hamburger.classList.toggle("active");
+    // Slides the menu in and out
+    navLinks.classList.toggle("active");
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const backToTopBtn = document.getElementById("backToTopBtn");
+  const scrollContainer = document.querySelector(".scroll-page"); // 👈 your main container
+
+  if (!backToTopBtn || !scrollContainer) {
+    return; // Fails silently and safely moves on!
+  }
+
+  // 🔥 listen to container scroll instead of window
+  scrollContainer.addEventListener("scroll", () => {
+    if (scrollContainer.scrollTop > 600) {
+      backToTopBtn.style.display = "flex";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  // 🔼 scroll back to top of container
+  backToTopBtn.addEventListener("click", () => {
+    scrollContainer.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});

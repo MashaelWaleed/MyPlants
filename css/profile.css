@@ -16,13 +16,14 @@
 
 /* --- Profile Sections Spacing --- */
 .profile-section {
+  padding-right: 2%;
   margin-bottom: 5rem; /* Large gaps between sections to make scrolling obvious */
   padding-bottom: 3rem;
   border-bottom: 1px solid rgba(91, 107, 64, 0.1);
   margin-left: 30%;
-  height:fit-content;
+  height: fit-content;
 }
-.profile-section h3{
+.profile-section h3 {
   font-weight: 700;
   font-size: x-large;
 }
@@ -234,4 +235,56 @@
   font-size: 2.5rem;
   color: var(--primary-color);
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1280px) {
+  .profile-sidebar {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+   .sticky-sidebar {
+    position: relative;
+  }
+
+  /* --- Profile Sidebar Navigation --- */
+  .profile-sidebar {
+    position: relative;
+  }
+
+  .sidebar-links {
+    display: flex;
+  }
+
+  .sidebar-links li a {
+  display: block;
+  padding: 0 0.5rem;
+  color: var(--color-text);
+
+}
+
+  .profile-section {
+  min-width: 350px;
+  margin:0 auto;
+}
+
+}
+
+@media (max-width: 400px) {
+
+  .sidebar-links {
+    flex-direction: column;
+  }
+
+.sidebar-links .sign-out {
+  color:var(--secondaryWhite-color) ;
+  font-weight: 400;
+  background-color: #da2020;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 5px 7px;
+  margin: auto;
+}
+
 }

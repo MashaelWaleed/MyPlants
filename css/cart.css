@@ -1,6 +1,7 @@
 /* ================================== Cart Page Layout ==================================*/
 .cart-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 4rem;
   max-width: 1100px;
@@ -142,4 +143,37 @@
 
 .checkout-btn:hover {
   background-color: #4a5734;
+}
+
+@media (max-width: 620px) {
+  .cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .cart-item-card {
+    flex-direction: column;
+    padding: 0.5rem;
+
+    gap: 2rem;
+  }
+  .item-details {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+  }
+
+  /* Quantity Selector */
+  .item-quantity {
+    gap: 0.5rem;
+    padding: 0.1rem 0.2rem;
+  }
+
+  .cart-summary {
+    flex: 1;
+    min-width: 100px;
+    height: fit-content; /* Prevents it from stretching down the whole page */
+    padding: 2.5rem;
+    text-align: left; /* Overriding the center text from your moving-card */
+  }
 }

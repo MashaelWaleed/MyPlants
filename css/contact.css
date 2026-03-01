@@ -8,11 +8,12 @@
   align-items: center; /* Centers the content perfectly in the middle of the screen */
   max-width: 900px;
   margin: 10% auto;
-  padding: 0 4%;
+  margin-bottom: 3%;
+  padding: 2% 6%;
   gap: 3rem;
   background-color: var(--secondaryWhite-color);
-  height: 70%;
   border-radius: 10px;
+  height: fit-content;
 }
 
 /* --- Left Column: Typography --- */
@@ -81,5 +82,64 @@
 .contact-elegant-form textarea {
   padding: 0.6rem 1rem; /* Slightly thinner padding */
   border-radius: 8px;
-  border: 1px solid transparent; /* Removes harsh borders */
+  border: 1px solid var(--primary-color); /* Removes harsh borders */
+}
+
+.contact-elegant-form input:focus,
+.contact-elegant-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(91, 107, 64, 0.15);
+}
+
+/* --- MOBILE PHONES (Max width: 1225px) --- */
+@media (max-width: 1225px) {
+  .contact {
+    max-width: 100%;
+    padding: 0 2%;
+    gap: 1rem;
+    height: 82%;
+  }
+}
+
+/* --- MOBILE PHONES (Max width: 850px) --- */
+@media (max-width: 850px) {
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 5px 2%;
+    gap: 1rem;
+    height: fit-content;
+    margin-top: 15%;
+  }
+
+  /* --- Left Column: Typography --- */
+  .contact-elegant-info h2 {
+    font-size: 2rem; /* Make it large and editorial */
+    line-height: 0.5;
+  }
+
+  .info-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /* --- Right Column: The Form Card --- */
+  .contact-elegant-form {
+    padding: 0.5rem;
+    margin: 0 5%;
+  }
+}
+
+@media (max-width: 550px) {
+  /* --- Right Column: The Form Card --- */
+  .contact-elegant-form {
+    padding: 0.5rem;
+  }
+
+  .contact-elegant-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }

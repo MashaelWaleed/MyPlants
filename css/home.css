@@ -97,3 +97,150 @@
   top: -30px;
   width: 75%;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+  left: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+/* ================================== Responsive Media Queries ================================== */
+
+@media (max-width: 1350px) {
+  .card-container {
+    width: 95%;
+    height: 20%;
+  }
+
+  .card .img {
+    position: absolute;
+    top: -30px;
+    width: 60%;
+  }
+
+  .main-img {
+    display: none; /* Hides */
+  }
+}
+
+/* --- TABLETS & SMALL LAPTOPS (Max width: 1024px) --- */
+@media (max-width: 1024px) {
+  .card-container {
+    height: 24%;}
+  
+  .store-name {
+    font-size: 32px;
+    margin-top: 13%;
+  }
+
+  .store-phrase {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .card {
+    width: 26%;
+  }
+
+  .card .img {
+    position: absolute;
+    top: -35px;
+    width: 60%;
+  }
+
+   .plainDiv {
+    width: 100%; /* Take up full width on mobile */
+    border-bottom-left-radius: 20px; /* Match the right side curve */
+    height: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .plainDiv {
+    width: 100%; /* Take up full width on mobile */
+    border-bottom-left-radius: 20px; /* Match the right side curve */
+    height: 45%;
+  }
+
+  .card {
+    width: 45%;
+    height: 130px;
+  }
+
+  .card-container {
+    gap: 60px; /* Add breathing room between stacked cards */
+    margin: auto;
+    margin-top: 10%;
+    padding-bottom: 50px;
+    width: 80%;
+    height: 10%;
+  }
+  .card .img {
+    position: absolute;
+    top: -30px;
+    width: 80%;
+  }
+}
+
+/* --- MOBILE PHONES (Max width: 568px) --- */
+@media (max-width: 568px) {
+  .plainDiv {
+    width: 100%; /* Take up full width on mobile */
+    border-bottom-left-radius: 20px; /* Match the right side curve */
+    height: 45%;
+  }
+
+  .store_name_container {
+    width: 100%;
+  }
+
+  .store-name {
+    font-size: 28px;
+    margin-left: 5%;
+    margin-top: 22%; /* Push text down below the navbar */
+  }
+
+  .store-phrase {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 16px;
+  }
+
+  .btn-container {
+    left: 5%;
+    bottom: -0px; /* Push buttons down to avoid text overlap */
+  }
+
+  .main-img {
+    display: none; /* Hides the large overlapping image on tiny screens */
+  }
+
+  .card-container {
+    flex-direction: column; /* Stack the A, B, C cards vertically */
+    align-items: center;
+    height: auto;
+    margin: auto;
+    margin-top: 20%;
+    padding-bottom: 40px;
+  }
+
+  .card {
+    width: 70%;
+    height: 160px;
+  }
+
+  .card .img {
+    position: absolute;
+    top: -30px;
+    width: 60%;
+  }
+
+  .btn-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+}}
+

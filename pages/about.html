@@ -57,6 +57,12 @@
             />
           </a>
         </div>
+
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
 
       <div class="page-header">
@@ -106,36 +112,43 @@
         <div class="container">
           <h2>🎬 Dive Into Our Story – Watch the Video!</h2>
 
-          <!-- Embedded YouTube Video -->
           <div class="video-wrapper">
-            <iframe
-              src="../videos/My Video-1.mp4"
-              title="video player"
-              frameborder="0"
-              allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-              "
-              allowfullscreen
-            >
-            </iframe>
+            <video controls width="100%" height="100%">
+              <source src="../videos/My Video-1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
-
-          <!-- OR Local Video File -->
-          <!--
-    <div class="video-wrapper">
-      <video controls>
-        <source src="your-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    -->
         </div>
       </section>
+      <!-- SIMPLE FOOTER -->
+      <footer class="footer">
+        <p class="info">Little Leaf Store &copy; 2026</p>
+        <div class="info-contact">
+          <p>Email: hello@littleleaf.com | Phone: +966 555 555 555</p>
+          <p>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+            |
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+            |
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </p>
+        </div>
+      </footer>
     </main>
 
     <!-- 🔍 Floating Search Overlay -->
@@ -149,6 +162,10 @@
         <button id="searchBtn">Search</button>
       </div>
     </div>
+
+    <button id="backToTopBtn" class="back-to-top">
+      <img class="img" src="../images/chevron-up.svg" alt="up button" />
+    </button>
 
     <script src="../scripts/main.js"></script>
   </body>
