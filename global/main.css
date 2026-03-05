@@ -16,6 +16,7 @@ body {
   background-color: var(--primary-color);
   color: var(--secondaryBlue-color);
   display: flex;
+  flex-direction: column;
   justify-content: center; /* horizontal */
   align-items: center; /* vertical */
   font-family: var(--font-body);
@@ -226,7 +227,8 @@ button:hover,
   margin-bottom: 0.5rem;
 }
 
-.form-group input,.form-group textarea {
+.form-group input,
+.form-group textarea {
   font-family: var(--font-body);
   font-size: 1rem;
   padding: 0.8rem 1rem;
@@ -302,24 +304,22 @@ button:hover,
   border-radius: 8px;
   cursor: pointer;
 }
-/* footerr */
+/* footer */
 .footer {
   /* Positioning */
   position: relative;
 
   /* Dimensions & Background */
   width: 90%; /* Removed 'width: inherit' override */
-
   /* Flexbox Setup */
   display: flex; /* Removed duplicate */
   justify-content: space-between;
   align-items: center;
   gap: 15%;
+  margin: auto;
 
   /* Spacing */
   height: fit-content;
-  padding: 0 10px; /* Use vertical padding to control height naturally instead of forcing 60px */
-
   /* Typography */
   color: var(--secondaryBlue-color);
   font-family: Arial, sans-serif;
@@ -334,7 +334,7 @@ button:hover,
 
 .info-contact {
   display: flex;
-  gap: 15%;
+  gap: 2%;
   text-align: center;
   margin-right: 4%;
 }
@@ -363,6 +363,9 @@ button:hover,
   transition: 0.3s ease;
   z-index: 999;
   display: none; /* hidden by default */
+}
+.footer .info-contact {
+  width: fit-content;
 }
 
 .footer a {

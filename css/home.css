@@ -69,16 +69,15 @@
 
 .card-container {
   width: 70%;
-  height: 200px;
+  height: 30%;
   margin-top: 5%;
-  padding: 8px 0;
   display: flex;
   justify-content: space-around;
 }
 
 .card {
   width: 20%;
-  height: 100%;
+  height: 185px;
   background: linear-gradient(45deg, #ecdfbb 40%, #faf1d4 60%);
   border-radius: 10px;
   position: relative;
@@ -98,20 +97,12 @@
   width: 75%;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0%;
-  left: 10px;
-  right: 10px;
-  z-index: 10;
-}
-
 /* ================================== Responsive Media Queries ================================== */
 
 @media (max-width: 1350px) {
   .card-container {
     width: 95%;
-    height: 20%;
+    height: 215px;
   }
 
   .card .img {
@@ -128,8 +119,9 @@
 /* --- TABLETS & SMALL LAPTOPS (Max width: 1024px) --- */
 @media (max-width: 1024px) {
   .card-container {
-    height: 24%;}
-  
+    height: 26%;
+  }
+
   .store-name {
     font-size: 32px;
     margin-top: 13%;
@@ -150,7 +142,7 @@
     width: 60%;
   }
 
-   .plainDiv {
+  .plainDiv {
     width: 100%; /* Take up full width on mobile */
     border-bottom-left-radius: 20px; /* Match the right side curve */
     height: 50%;
@@ -238,9 +230,8 @@
   }
 
   .btn-container {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-
-}}
-
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+}
