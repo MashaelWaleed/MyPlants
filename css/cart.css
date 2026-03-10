@@ -20,7 +20,7 @@
 .cart-item-card {
   display: flex;
   align-items: center;
-  background-color:  #f5f0e1;
+  background-color: #f5f0e1;
   padding: 1.5rem;
   border-radius: 12px;
   gap: 2rem;
@@ -101,6 +101,10 @@
   height: fit-content; /* Prevents it from stretching down the whole page */
   padding: 2.5rem;
   text-align: left; /* Overriding the center text from your moving-card */
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(91, 107, 64, 0.08);
+  border: 3px solid rgba(86, 104, 54, 0.5);
+  background-color: var(--secondaryWhite-color);
 }
 
 .cart-summary h3 {
