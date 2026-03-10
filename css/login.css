@@ -118,21 +118,6 @@
   font-size: 0.9rem;
 }
 
-.recover-password {
-  text-align: right;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-.recover-password a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 700;
-  transition: color 0.2s ease;
-}
-
-.recover-password a:hover {
-  color: var(--secondaryBlue-color);
-}
 
 /* Button & Footer */
 .login-btn {

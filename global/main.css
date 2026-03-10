@@ -200,9 +200,13 @@ button:hover,
   transform: translateY(-8px) rotate(-45deg);
 }
 
+/* .scroll-page class */
 .scroll-page {
-  overflow: scroll;
-  scrollbar-width: none;
+  overflow-y: scroll;
+  scrollbar-gutter: stable; /* Keeps layout stable when scrollbar appears */
+  scrollbar-width: thin; /* Options: auto, thin */
+  scrollbar-color: var(--primary-color) #f0f7f4; /* Light green thumb, very pale green track */
+  border-radius: 0px; /* Sharp edges for the track for modern contrast */
 }
 
 .form-row {
@@ -392,28 +396,32 @@ button:hover,
     gap: 5%;
     margin-right: 2%;
   }
-}
 
-/* --- TABLETS & SMALL LAPTOPS (Max width: 1024px) --- */
-@media (max-width: 1024px) {
-  .container {
-    width: 95vw; /* Take up more screen space on smaller monitors */
+  .icons-container {
+    width: 15%; /* Give icons more room */
+  }
+  .nav-links a {
+    font-size: 19px;
   }
 
   .nav-links {
-    gap: 15px; /* Reduce space between links */
-  }
-
-  .nav-links a {
-    font-size: 16px;
+    gap: 14px; /* Reduce space between links */
+    padding-left: 0%;
   }
 
   .logo {
     width: 180px; /* Shrink logo slightly */
   }
+}
 
-  .icons-container {
-    width: 25%; /* Give icons more room */
+/* --- TABLETS & SMALL LAPTOPS (Max width: 1090px) --- */
+@media (max-width: 1090px) {
+  .container {
+    width: 95vw; /* Take up more screen space on smaller monitors */
+  }
+
+  .nav-links {
+    gap: 10px; /* Reduce space between links */
   }
 
   .page-header p {
@@ -426,6 +434,14 @@ button:hover,
   .info-contact {
     display: flex;
     flex-direction: column;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+   .logo {
+    width: 170px; /* Shrink logo slightly */
   }
 }
 
@@ -443,16 +459,21 @@ button:hover,
     gap: 10px;
     margin: 0 auto;
   }
-}
-
-/* --- MOBILE PHONES (Max width: 568px) --- */
-@media (max-width: 568px) {
-  .container {
+   .container {
     width: 100vw;
     height: 100vh;
     border-radius: 0; /* Remove rounded corners for full-screen mobile feel */
     overflow-y: auto; /* Allow scrolling inside the container on mobile */
   }
+}
+@media (max-width: 715px) {
+.nav-links {
+    gap: 8px; /* Reduce space between links */
+  }
+}
+
+/* --- MOBILE PHONES (Max width: 580px) --- */
+@media (max-width: 580px) {
 
   /* Adjust Page Headers */
   .page-header {
@@ -512,10 +533,11 @@ button:hover,
     width: 150px;
   }
 
-  .icons-container {
-    width: auto;
+  
+    .icons-container {
+    width:50%;
     gap: 15px;
-    margin-right: 15px;
+    justify-content: end;
   }
 
   /* Form Layout */

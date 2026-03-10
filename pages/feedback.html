@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback | Little Leaf </title>
+    <link rel="stylesheet" href="../global/main.css" />
+    <link rel="stylesheet" href="../css/feedback.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container fill-container scroll-page">
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <a href="../index.html" class="logo">
+          <img class="img" src="../images/logo.svg" alt="logo image" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li><a href="./about.html">About </a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./feedback.html">Feedback</a></li>
+        </ul>
+        <div class="icons-container">
+          <a href="#" id="openSearch">
+            <img
+              class="search-icon icon"
+              src="../images/search.svg"
+              alt="search icon"
+          /></a>
+          <a href="../pages/cart.html">
+            <img
+              class="cart-icon icon"
+              src="../images/shopping-cart.svg"
+              alt="shopping cart icon"
+            />
+          </a>
+          <a id="userIcon" class="userIcon" href="../pages/profile.html">
+            <img
+              class="user-icon icon"
+              src="../images/user.svg"
+              alt="user icon"
+            />
+          </a>
+          <a href="../pages/schedule.html">
+            <img
+              class="sprout-icon-icon icon"
+              src="../images/sprout.svg"
+              alt="sprout icon"
+            />
+          </a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <div class="grid-layout">
+        <div class="users-opinions-container">
+          <h2>Share Your Thoughts with Little Leaf</h2>
+          <p>We'd love to hear how we're doing!</p>
+
+          <div class="comment-card">
+            <h1 class="comment-sender"><span> From </span>Mshael Waleed</h1>
+            <p class="comment-content">Good Job! Love your products..💕</p>
+            <span> 3/10/2026 </span>
+          </div>
+
+          <div class="comment-card">
+            <h1 class="comment-sender"><span> From </span>Shahad Mohammed</h1>
+            <p class="comment-content">I love your plants !</p>
+            <span> 15/9/2026 </span>
+          </div>
+
+          <div class="comment-card">
+            <h1 class="comment-sender"><span> From </span>Jumannah</h1>
+            <p class="comment-content">Your website design is lovely 😍</p>
+            <span> 8/10/2026 </span>
+          </div>
+
+          <div class="comment-card">
+            <h1 class="comment-sender"><span> From </span>JuJu</h1>
+            <p class="comment-content">❤️❤️❤️</p>
+            <span> 9/10/2026 </span>
+          </div>
+
+          <div class="comment-card">
+            <h1 class="comment-sender"><span> From </span>Mona</h1>
+            <p class="comment-content">Great store!</p>
+            <span> 8/9/2026 </span>
+          </div>
+        </div>
+
+        <div class="feedback-container">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name (Will be shown to others)"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>How would you rate your experience?</label>
+              <div class="radio-group">
+                <input type="radio" id="good" name="rating" value="good" />
+                <label for="good">Good</label>
+
+                <input
+                  type="radio"
+                  id="average"
+                  name="rating"
+                  value="average"
+                />
+                <label for="average">Average</label>
+
+                <input type="radio" id="poor" name="rating" value="poor" />
+                <label for="poor">Poor</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Which services did you use?</label>
+              <div class="checkbox-group">
+                <label
+                  ><input type="checkbox" name="service" value="care-tips" />
+                  Plant Care Tips</label
+                >
+                <label
+                  ><input type="checkbox" name="service" value="shop" /> Plant
+                  Shop</label
+                >
+                <label
+                  ><input type="checkbox" name="service" value="gift" />
+                  Send a Gift
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="preference">Content Preference</label>
+              <select id="preference" name="preference">
+                <option value="indoor">Indoor Plants</option>
+                <option value="outdoor">Outdoor Gardening</option>
+                <option value="succulents">Succulents & Cacti</option>
+                <option value="hydroponics">Hydroponics</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="comments">Comments to share</label>
+              <textarea
+                id="comments"
+                name="comments"
+                rows="4"
+                placeholder="Share Your Thoughts with Little Leaf"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- SIMPLE FOOTER -->
+      <footer class="footer">
+        <p class="info">Little Leaf Store &copy; <span id="year"></span></p>
+        <div class="info-contact">
+          <p>Email: hello@littleleaf.com | Phone: +966 555 555 555</p>
+          <p>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+            |
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+            |
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

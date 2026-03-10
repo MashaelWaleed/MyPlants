@@ -46,6 +46,35 @@
   box-shadow: 0 15px 30px rgba(91, 107, 64, 0.15); /* Adds a soft green-tinted shadow */
 }
 
+/* Styling the specific card that holds the quote */
+.testimonial-card {
+    border-top: 4px solid #4caf50; /* A green "growth" line at the top */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-card blockquote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #2d5a27;
+    margin: 15px 0;
+    padding: 0 10px;
+    line-height: 1.5;
+}
+
+.testimonial-card footer {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #888;
+}
+
+.testimonial-card cite {
+    font-style: normal; /* Removes default italic so it looks modern */
+    font-weight: bold;
+}
+
 /* VID Section styling */
 .vid-section {
   padding: 4% 20px;

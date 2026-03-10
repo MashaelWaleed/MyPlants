@@ -70,6 +70,9 @@
   color: var(--color-olive, #5b6b40);
 }
 
+.qty-btn:hover {
+  background-color: #f1ffda;
+}
 .qty-number {
   font-weight: 700;
   min-width: 20px;
@@ -88,6 +91,7 @@
 
 .remove-btn:hover {
   transform: scale(1.1);
+  background-color: #ffe0e0;
 }
 
 /* --- Cart Summary Card --- */
