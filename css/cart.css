@@ -1,4 +1,4 @@
-/* ================================== Cart Page Layout ==================================*/
+/* ================================== Cart Page CSS ==================================*/
 .cart-container {
   display: flex;
   flex-direction: row;
@@ -20,7 +20,7 @@
 .cart-item-card {
   display: flex;
   align-items: center;
-  background-color: var(--color-beige, #f5f0e1);
+  background-color:  #f5f0e1;
   padding: 1.5rem;
   border-radius: 12px;
   gap: 2rem;
@@ -42,7 +42,7 @@
 .item-details h3 {
   font-family: var(--font-heading, "Playfair Display", serif);
   font-size: 1.3rem;
-  color: var(--color-navy, #2b3342);
+  color: var(--secondaryBlue-color);
   margin-bottom: 0.3rem;
 }
 
@@ -67,7 +67,7 @@
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
-  color: var(--color-olive, #5b6b40);
+  color: var(--primary-color);
 }
 
 .qty-btn:hover {
@@ -106,7 +106,7 @@
 .cart-summary h3 {
   font-family: var(--font-heading, "Playfair Display", serif);
   font-size: 1.8rem;
-  color: var(--color-navy, #2b3342);
+  color: var(--secondaryBlue-color);
   margin-bottom: 2rem;
   text-align: center;
 }

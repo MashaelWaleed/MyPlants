@@ -1,4 +1,4 @@
-/* ================================== About Page Layout ==================================*/
+/* ================================== About Page CSS ==================================*/
 /* --- About Us: Moving Cards --- */
 .about-card-container {
   display: flex;
@@ -48,31 +48,31 @@
 
 /* Styling the specific card that holds the quote */
 .testimonial-card {
-    border-top: 4px solid #4caf50; /* A green "growth" line at the top */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  border-top: 4px solid #4caf50; /* A green "growth" line at the top */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .testimonial-card blockquote {
-    font-style: italic;
-    font-size: 1.1rem;
-    color: #2d5a27;
-    margin: 15px 0;
-    padding: 0 10px;
-    line-height: 1.5;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #2d5a27;
+  margin: 15px 0;
+  padding: 0 10px;
+  line-height: 1.5;
 }
 
 .testimonial-card footer {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #888;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #888;
 }
 
 .testimonial-card cite {
-    font-style: normal; /* Removes default italic so it looks modern */
-    font-weight: bold;
+  font-style: normal; /* Removes default italic */
+  font-weight: bold;
 }
 
 /* VID Section styling */
@@ -152,12 +152,10 @@
     padding: 8% 20px;
   }
 
-  .video-wrapper{
-   width: 90%;
+  .video-wrapper {
+    width: 90%;
+  }
 }
-}
-
-
 
 /* --- MOBILE PHONES (Max width: 768px) --- */
 @media (max-width: 768px) {

@@ -36,4 +36,3 @@ loginForm.addEventListener("submit", (e) => {
   }
 });
 
-console.log("kkkkkkkkkkkkk");

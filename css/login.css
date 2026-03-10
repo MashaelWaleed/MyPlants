@@ -1,3 +1,4 @@
+/* ================================== Lodin/Register Page CSS ==================================*/
 /* --- Login Wrapper & Card --- */
 .login-wrapper {
   display: grid;
@@ -12,7 +13,7 @@
   height: fit-content;
   background-color: var(--secondaryWhite-color);
   border-radius: 20px;
-  box-shadow: 0 25px 50px rgba(91, 107, 64, 0.15); /* Deep, elegant shadow */
+  box-shadow: 0 25px 50px rgba(91, 107, 64, 0.15); 
   margin: auto 2rem;
   border: 3px solid rgba(86, 104, 54, 0.5);
   max-width: 700px;

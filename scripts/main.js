@@ -75,13 +75,13 @@ if (hamburger) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const backToTopBtn = document.getElementById("backToTopBtn");
-  const scrollContainer = document.querySelector(".scroll-page"); // 👈 your main container
+  const scrollContainer = document.querySelector(".scroll-page"); //main container
 
   if (!backToTopBtn || !scrollContainer) {
     return; // Fails silently and safely moves on!
   }
 
-  // 🔥 listen to container scroll instead of window
+  //listen to container scroll instead of window
   scrollContainer.addEventListener("scroll", () => {
     if (scrollContainer.scrollTop > 600) {
       backToTopBtn.style.display = "flex";
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 🔼 scroll back to top of container
+  // scroll back to top of container
   backToTopBtn.addEventListener("click", () => {
     scrollContainer.scrollTo({
       top: 0,
