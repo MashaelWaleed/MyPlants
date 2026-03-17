@@ -49,6 +49,10 @@ p {
   font-weight: 400; /* Regular Lato */
 }
 
+.nav-header {
+  width: 100%;
+}
+
 .page-header {
   text-align: center;
   margin-top: 5rem;
@@ -440,7 +444,7 @@ button:hover,
     font-size: 16px;
   }
 
-   .logo {
+  .logo {
     width: 170px; /* Shrink logo slightly */
   }
 }
@@ -459,7 +463,7 @@ button:hover,
     gap: 10px;
     margin: 0 auto;
   }
-   .container {
+  .container {
     width: 100vw;
     height: 100vh;
     border-radius: 0; /* Remove rounded corners for full-screen mobile feel */
@@ -467,14 +471,13 @@ button:hover,
   }
 }
 @media (max-width: 715px) {
-.nav-links {
+  .nav-links {
     gap: 8px; /* Reduce space between links */
   }
 }
 
 /* --- MOBILE PHONES (Max width: 580px) --- */
 @media (max-width: 580px) {
-
   /* Adjust Page Headers */
   .page-header {
     margin-top: 4rem;
@@ -533,9 +536,8 @@ button:hover,
     width: 150px;
   }
 
-  
-    .icons-container {
-    width:50%;
+  .icons-container {
+    width: 50%;
     gap: 15px;
     justify-content: end;
   }
