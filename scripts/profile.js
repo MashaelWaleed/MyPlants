@@ -1,6 +1,6 @@
 // Get all the sections and sidebar links
 const sections = document.querySelectorAll(".profile-section");
-const navLinks = document.querySelectorAll(".sidebar-links .nav-link");
+const profileNavLinks = document.querySelectorAll(".sidebar-links .nav-link");
 
 // Create an observer that watches which section is on the screen
 const observer = new IntersectionObserver(
@@ -9,7 +9,7 @@ const observer = new IntersectionObserver(
       // If the section is currently in the viewport
       if (entry.isIntersecting) {
         // Remove 'active' class from all links
-        navLinks.forEach((link) => link.classList.remove("active"));
+        profileNavLinks.forEach((link) => link.classList.remove("active"));
 
         // Find the link that matches this section's ID and make it active
         const id = entry.target.getAttribute("id");
