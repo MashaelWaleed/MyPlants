@@ -41,12 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 
-  // 🎯 1. Control login button visibility
+  // 1. Control login button visibility
   if (loginBtn) {
     loginBtn.style.display = isLoggedIn ? "none" : "inline-block";
   }
 
-  // 🎯 2. Control user icon visibility safely
+  // 2. Control user icon visibility safely
   if (userIcon) {
     if (isLoggedIn) {
       userIcon.style.display = "flex";

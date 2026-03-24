@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // optional: clear everything
     // localStorage.clear();
 
-    // 🔁 redirect to login page
+    // redirect to login page
     window.location.href = "../index.html";
   });
 });
