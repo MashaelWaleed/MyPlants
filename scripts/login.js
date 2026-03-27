@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
 loginForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+  const email = document.getElementById("login-email").value;
+  const password = document.getElementById("login-password").value;
 
   // simulate login validation
   if (email && password) {
