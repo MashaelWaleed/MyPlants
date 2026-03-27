@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <main class="container fill-container scroll-page">
+    <div class="container fill-container scroll-page">
       <!-- HEADER -->
       <header class="nav-header">
         <nav class="navbar">
@@ -74,144 +74,146 @@
         </nav>
       </header>
 
-      <div class="page-header">
-        <h2>My Account</h2>
-        <p>Manage your details and keep your sanctuary growing.</p>
-      </div>
-      <!-- My Account -->
-      <div class="profile-container">
-        <aside class="profile-sidebar sticky-sidebar">
-          <ul class="sidebar-links">
-            <li>
-              <a href="#account-details" class="nav-link active"
-                >Account Details</a
-              >
-            </li>
-            <li>
-              <a href="#order-history" class="nav-link">Order History</a>
-            </li>
-            <li>
-              <a href="#saved-addresses" class="nav-link">Saved Addresses</a>
-            </li>
-            <li>
-              <a href="#payment-methods" class="nav-link">Payment Methods</a>
-            </li>
-            <li class="divider"></li>
-            <li><a href="#" class="sign-out">Sign Out</a></li>
-          </ul>
-        </aside>
-        <!-- Account Details -->
-        <div id="account-details" class="profile-section">
-          <h3>Personal Information</h3>
-          <form class="profile-form">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input
-                  type="text"
-                  id="firstName"
-                  placeholder="e.g. Jane"
-                  value="Jane"
-                />
-              </div>
-              <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input
-                  type="text"
-                  id="lastName"
-                  placeholder="e.g. Doe"
-                  value="Doe"
-                />
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" value="jane.doe@example.com" />
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="(555) 123-4567" />
-              </div>
-            </div>
-
-            <div class="form-group full-width">
-              <button type="submit" class="btn form-btn">Save Changes</button>
-            </div>
-          </form>
+      <main>
+        <div class="page-header">
+          <h2>My Account</h2>
+          <p>Manage your details and keep your sanctuary growing.</p>
         </div>
-        <!-- Order History -->
-        <div id="order-history" class="profile-section">
-          <h3>Order History</h3>
-          <div class="order-list">
-            <div class="order-card">
-              <div class="order-header">
-                <span class="order-id">Order #LL-4920</span>
-                <span class="order-status delivered">Delivered</span>
+        <!-- My Account -->
+        <div class="profile-container">
+          <aside class="profile-sidebar sticky-sidebar">
+            <ul class="sidebar-links">
+              <li>
+                <a href="#account-details" class="nav-link active"
+                  >Account Details</a
+                >
+              </li>
+              <li>
+                <a href="#order-history" class="nav-link">Order History</a>
+              </li>
+              <li>
+                <a href="#saved-addresses" class="nav-link">Saved Addresses</a>
+              </li>
+              <li>
+                <a href="#payment-methods" class="nav-link">Payment Methods</a>
+              </li>
+              <li class="divider"></li>
+              <li><a href="#" class="sign-out">Sign Out</a></li>
+            </ul>
+          </aside>
+          <!-- Account Details -->
+          <div id="account-details" class="profile-section">
+            <h3>Personal Information</h3>
+            <form class="profile-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    placeholder="e.g. Jane"
+                    value="Jane"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    placeholder="e.g. Doe"
+                    value="Doe"
+                  />
+                </div>
               </div>
-              <p class="order-date">Placed on October 12, 2025</p>
-              <div class="order-items">
-                1x Monstera Deliciosa, 1x Ceramic Pot
-              </div>
-              <p class="order-total">Total: $65.00</p>
-            </div>
 
-            <div class="order-card">
-              <div class="order-header">
-                <span class="order-id">Order #LL-4811</span>
-                <span class="order-status processing">Processing</span>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" value="jane.doe@example.com" />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" placeholder="(555) 123-4567" />
+                </div>
               </div>
-              <p class="order-date">Placed on February 24, 2026</p>
-              <div class="order-items">1x Zanzibar Gem</div>
-              <p class="order-total">Total: $35.00</p>
+
+              <div class="form-group full-width">
+                <button type="submit" class="btn form-btn">Save Changes</button>
+              </div>
+            </form>
+          </div>
+          <!-- Order History -->
+          <div id="order-history" class="profile-section">
+            <h3>Order History</h3>
+            <div class="order-list">
+              <div class="order-card">
+                <div class="order-header">
+                  <span class="order-id">Order #LL-4920</span>
+                  <span class="order-status delivered">Delivered</span>
+                </div>
+                <p class="order-date">Placed on October 12, 2025</p>
+                <div class="order-items">
+                  1x Monstera Deliciosa, 1x Ceramic Pot
+                </div>
+                <p class="order-total">Total: $65.00</p>
+              </div>
+
+              <div class="order-card">
+                <div class="order-header">
+                  <span class="order-id">Order #LL-4811</span>
+                  <span class="order-status processing">Processing</span>
+                </div>
+                <p class="order-date">Placed on February 24, 2026</p>
+                <div class="order-items">1x Zanzibar Gem</div>
+                <p class="order-total">Total: $35.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Saved Addresses -->
+          <div id="saved-addresses" class="profile-section">
+            <h3>Saved Addresses</h3>
+            <div class="info-grid">
+              <div class="info-card">
+                <span class="badge">Default</span>
+                <h4>Home</h4>
+                <p>
+                  Jane Doe<br />123 Green Oasis St, Apt 4B<br />Jeddah, Makkah
+                  Province<br />Saudi Arabia
+                </p>
+                <div class="card-actions">
+                  <button class="text-btn">Edit</button>
+                  <button class="text-btn danger">Delete</button>
+                </div>
+              </div>
+
+              <div class="info-card add-new-card">
+                <div class="add-icon">+</div>
+                <p>Add New Address</p>
+              </div>
+            </div>
+          </div>
+          <!-- Payment Methods -->
+          <div id="payment-methods" class="profile-section">
+            <h3>Payment Methods</h3>
+            <div class="info-grid">
+              <div class="info-card">
+                <span class="badge">Default</span>
+                <h4>Visa ending in 4242</h4>
+                <p>Expires 12/28</p>
+                <p class="card-name">Jane Doe</p>
+                <div class="card-actions">
+                  <button class="text-btn danger">Remove</button>
+                </div>
+              </div>
+
+              <div class="info-card add-new-card">
+                <div class="add-icon">+</div>
+                <p>Add Payment Method</p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Saved Addresses -->
-        <div id="saved-addresses" class="profile-section">
-          <h3>Saved Addresses</h3>
-          <div class="info-grid">
-            <div class="info-card">
-              <span class="badge">Default</span>
-              <h4>Home</h4>
-              <p>
-                Jane Doe<br />123 Green Oasis St, Apt 4B<br />Jeddah, Makkah
-                Province<br />Saudi Arabia
-              </p>
-              <div class="card-actions">
-                <button class="text-btn">Edit</button>
-                <button class="text-btn danger">Delete</button>
-              </div>
-            </div>
-
-            <div class="info-card add-new-card">
-              <div class="add-icon">+</div>
-              <p>Add New Address</p>
-            </div>
-          </div>
-        </div>
-        <!-- Payment Methods -->
-        <div id="payment-methods" class="profile-section">
-          <h3>Payment Methods</h3>
-          <div class="info-grid">
-            <div class="info-card">
-              <span class="badge">Default</span>
-              <h4>Visa ending in 4242</h4>
-              <p>Expires 12/28</p>
-              <p class="card-name">Jane Doe</p>
-              <div class="card-actions">
-                <button class="text-btn danger">Remove</button>
-              </div>
-            </div>
-
-            <div class="info-card add-new-card">
-              <div class="add-icon">+</div>
-              <p>Add Payment Method</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </main>
       <!-- SIMPLE FOOTER -->
       <footer class="footer">
         <p class="info">Little Leaf Store &copy; <span id="year"></span></p>
@@ -241,7 +243,7 @@
           </p>
         </div>
       </footer>
-    </main>
+    </div>
 
     <!-- 🔍 Floating Search Overlay -->
     <div id="searchOverlay" class="search-overlay">

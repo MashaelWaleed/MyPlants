@@ -94,6 +94,8 @@ button:hover,
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   width: 80vw;
   height: 90vh;
   border-radius: 10px;
@@ -101,12 +103,17 @@ button:hover,
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0;
+
+}
+
+main {
+  /* This tells the main content to grow and take up all available space, 
+     effectively pushing the footer to the bottom */
+  flex: 1;
 }
 
 .main-container {
   background-color: var(--secondaryWhite-color);
-  overflow-y: scroll;
-  scrollbar-width: none;
 }
 
 .fill-container {

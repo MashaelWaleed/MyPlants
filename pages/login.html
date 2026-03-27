@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <main class="container fill-container scroll-page">
+    <div class="container fill-container scroll-page">
       <!-- HEADER -->
       <header class="nav-header">
         <nav class="navbar">
@@ -73,125 +73,128 @@
           </div>
         </nav>
       </header>
-
-      <section class="login-wrapper">
-        <div
-          class="login-image"
-          onclick="window.location.href = '../index.html'"
-        >
-          <img
-            src="../images/logo.svg"
-            alt="Lush green leaves shining in the sun"
-          />
-          <div class="image-overlay-text">
-            <h2>Grow With Us !</h2>
+      <main>
+        <section class="login-wrapper">
+          <div
+            class="login-image"
+            onclick="window.location.href = '../index.html'"
+          >
+            <img
+              src="../images/logo.svg"
+              alt="Lush green leaves shining in the sun"
+            />
+            <div class="image-overlay-text">
+              <h2>Grow With Us !</h2>
+            </div>
           </div>
-        </div>
 
-        <div class="login-card">
-          <div class="login-form-container">
-            <!--  LOGIN FORM -->
-            <form
-              id="loginForm"
-              class="login-form active-form"
-              method="post"
-              action=""
-            >
-              <header class="login-header">
-                <h2>Welcome Back</h2>
-                <p>Sign in to continue cultivating your personal sanctuary.</p>
-              </header>
+          <div class="login-card">
+            <div class="login-form-container">
+              <!--  LOGIN FORM -->
+              <form
+                id="loginForm"
+                class="login-form active-form"
+                method="post"
+                action=""
+              >
+                <header class="login-header">
+                  <h2>Welcome Back</h2>
+                  <p>
+                    Sign in to continue cultivating your personal sanctuary.
+                  </p>
+                </header>
 
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input
-                  type="email"
-                  placeholder="hello@example.com"
-                  required
-                  name="email"
-                  id="email"
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input
-                  type="password"
-                  placeholder="••••••••"
-                  required
-                  name="password"
-                  id="password"
-                />
-              </div>
-
-              <button class="login-btn" type="submit">Sign In</button>
-
-              <div class="login-footer">
-                Don’t have an account?
-                <a href="#" id="showRegister">Create one here</a>
-              </div>
-            </form>
-
-            <!--  REGISTER FORM -->
-            <form id="registerForm" class="login-form">
-              <header class="login-header">
-                <h2>Create Account</h2>
-                <p>Join Little Leaf and start growing your green space 🌿</p>
-              </header>
-              <div class="form-row">
                 <div class="form-group">
-                  <label for="fName">First Name</label>
+                  <label for="email">Email Address</label>
                   <input
-                    type="text"
-                    placeholder="Your First Name"
-                    name="fName"
-                    id="fName"
+                    type="email"
+                    placeholder="hello@example.com"
+                    required
+                    name="email"
+                    id="email"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    placeholder="••••••••"
+                    required
+                    name="password"
+                    id="password"
+                  />
+                </div>
+
+                <button class="login-btn" type="submit">Sign In</button>
+
+                <div class="login-footer">
+                  Don’t have an account?
+                  <a href="#" id="showRegister">Create one here</a>
+                </div>
+              </form>
+
+              <!--  REGISTER FORM -->
+              <form id="registerForm" class="login-form">
+                <header class="login-header">
+                  <h2>Create Account</h2>
+                  <p>Join Little Leaf and start growing your green space 🌿</p>
+                </header>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="fName">First Name</label>
+                    <input
+                      type="text"
+                      placeholder="Your First Name"
+                      name="fName"
+                      id="fName"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="fName">Last Name</label>
+                    <input
+                      type="text"
+                      placeholder="Your Last Name"
+                      name="lName"
+                      id="lName"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="hello@example.com"
                     required
                   />
                 </div>
+
                 <div class="form-group">
-                  <label for="fName">Last Name</label>
+                  <label for="password">Password</label>
                   <input
-                    type="text"
-                    placeholder="Your Last Name"
-                    name="lName"
-                    id="lName"
+                    type="password"
+                    id="password"
+                    placeholder="••••••••"
                     required
                   />
                 </div>
-              </div>
 
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="hello@example.com"
-                  required
-                />
-              </div>
+                <button class="login-btn" type="submit">Sign Up</button>
 
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input
-                  type="password"
-                  id="password"
-                  placeholder="••••••••"
-                  required
-                />
-              </div>
-
-              <button class="login-btn" type="submit">Sign Up</button>
-
-              <div class="login-footer">
-                Already have an account?
-                <a href="#" id="showLogin">Login here</a>
-              </div>
-            </form>
+                <div class="login-footer">
+                  Already have an account?
+                  <a href="#" id="showLogin">Login here</a>
+                </div>
+              </form>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
       <!-- SIMPLE FOOTER -->
       <footer class="footer">
         <p class="info">Little Leaf Store &copy; <span id="year"></span></p>
@@ -221,7 +224,7 @@
           </p>
         </div>
       </footer>
-    </main>
+    </div>
 
     <!-- 🔍 Floating Search Overlay -->
     <div id="searchOverlay" class="search-overlay">

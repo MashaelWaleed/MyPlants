@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <main class="container fill-container scroll-page">
+    <div class="container fill-container scroll-page">
       <!-- HEADER -->
       <header class="nav-header">
         <nav class="navbar">
@@ -75,71 +75,75 @@
           </div>
         </nav>
       </header>
-
-      <div class="page-header">
-        <h2>Your Cart</h2>
-        <p>
-          Review your botanical companions before bringing them home to your
-          sanctuary.
-        </p>
-      </div>
-
-      <section class="cart-container">
-        <div class="cart-items-list">
-          <div class="cart-item-card">
-            <img
-              src="../images/products/monstera.jpg"
-              alt="Monstera Deliciosa"
-            />
-            <div class="item-details">
-              <h3>Monstera Deliciosa</h3>
-              <p class="item-price">$120.00</p>
-            </div>
-            <div class="item-quantity">
-              <button class="qty-btn">-</button>
-              <span class="qty-number">1</span>
-              <button class="qty-btn">+</button>
-            </div>
-            <button class="remove-btn">✕</button>
-          </div>
-
-          <div class="cart-item-card">
-            <img src="../images/products/rubber_plant.jpg" alt="Rubber Plant" />
-            <div class="item-details">
-              <h3>Rubber Plant</h3>
-              <p class="item-price">$95.00</p>
-            </div>
-            <div class="item-quantity">
-              <button class="qty-btn">-</button>
-              <span class="qty-number">1</span>
-              <button class="qty-btn">+</button>
-            </div>
-            <button class="remove-btn">✕</button>
-          </div>
+      <main>
+        <div class="page-header">
+          <h2>Your Cart</h2>
+          <p>
+            Review your botanical companions before bringing them home to your
+            sanctuary.
+          </p>
         </div>
 
-        <div class="cart-summary moving-card">
-          <h3>Order Summary</h3>
+        <section class="cart-container">
+          <div class="cart-items-list">
+            <div class="cart-item-card">
+              <img
+                src="../images/products/monstera.jpg"
+                alt="Monstera Deliciosa"
+              />
+              <div class="item-details">
+                <h3>Monstera Deliciosa</h3>
+                <p class="item-price">$120.00</p>
+              </div>
+              <div class="item-quantity">
+                <button class="qty-btn">-</button>
+                <span class="qty-number">1</span>
+                <button class="qty-btn">+</button>
+              </div>
+              <button class="remove-btn">✕</button>
+            </div>
 
-          <div class="summary-row">
-            <span>Subtotal</span>
-            <span>$215.00</span>
+            <div class="cart-item-card">
+              <img
+                src="../images/products/rubber_plant.jpg"
+                alt="Rubber Plant"
+              />
+              <div class="item-details">
+                <h3>Rubber Plant</h3>
+                <p class="item-price">$95.00</p>
+              </div>
+              <div class="item-quantity">
+                <button class="qty-btn">-</button>
+                <span class="qty-number">1</span>
+                <button class="qty-btn">+</button>
+              </div>
+              <button class="remove-btn">✕</button>
+            </div>
           </div>
-          <div class="summary-row">
-            <span>Shipping</span>
-            <span>Calculated at checkout</span>
+
+          <div class="cart-summary moving-card">
+            <h3>Order Summary</h3>
+
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span>$215.00</span>
+            </div>
+            <div class="summary-row">
+              <span>Shipping</span>
+              <span>Calculated at checkout</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="summary-row total-row">
+              <span>Total</span>
+              <span>$215.00</span>
+            </div>
+
+            <button class="btn checkout-btn">Proceed to Checkout</button>
           </div>
-
-          <div class="divider"></div>
-
-          <div class="summary-row total-row">
-            <span>Total</span>
-            <span>$215.00</span>
-          </div>
-
-          <button class="btn checkout-btn">Proceed to Checkout</button>
-        </div>
-      </section>
+        </section>
+      </main>
       <!-- SIMPLE FOOTER -->
       <footer class="footer">
         <p class="info">Little Leaf Store &copy; <span id="year"></span></p>
@@ -169,7 +173,7 @@
           </p>
         </div>
       </footer>
-    </main>
+    </div>
 
     <!-- 🔍 Floating Search Overlay -->
     <div id="searchOverlay" class="search-overlay">
