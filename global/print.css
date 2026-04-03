@@ -1,0 +1,40 @@
+/* ================================================================== 
+   Print Stylesheet for schedule page only 
+================================================================== */
+
+/* 1. HIDE NON-TABLE ELEMENTS */
+.nav-header,
+.page-header,
+.footer,
+#searchOverlay {
+  display: none !important;
+}
+
+/* 2. RESET CONTAINER MARGINS FOR PRINTING */
+.container,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: white !important;
+}
+
+/* 3. OPTIMIZE THE TABLE FOR PAPER */
+.schedule-table {
+  width: 100% !important; /* Make table span the full width of the paper */
+  margin: 0 !important;
+  border: 2px solid black !important;
+}
+
+/* Add solid borders for better readability on paper */
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid black !important;
+  color: black !important; /* Force text to black to save color ink */
+}
+
+/* Lighten the dark green header to save ink, but keep it distinct */
+.schedule-table th {
+  background-color: #f2f2f2 !important;
+  -webkit-print-color-adjust: exact; /* Forces browsers to print the background color */
+  print-color-adjust: exact;
+}
